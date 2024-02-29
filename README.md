@@ -2,6 +2,8 @@
 
 before we begin, make sure you have node.js installed on your system. if not, you can download and install it from [nodejs.org](https://nodejs.org/).
 
+<br /> 
+
 ### step 1: create a new directory
 open your terminal or command prompt and navigate to the desired directory where you want to create your bot project. then, execute the following command to create a new directory:
 ```bash
@@ -11,26 +13,40 @@ next, navigate into the newly created directory:
 ```bash
 cd discord.js-tutorial-bot
 ```
+
+<br /> 
+
 ### step 2: initialize your project
 run the following command to initialize a new node.js project with default settings:
 ```bash
 npm init -y
 ```
 this will create a `package.json` file which will store information about your project.
+
+<br /> 
+
 ### step 3: install discord.js
 now, let's install the discord.js library, which is a powerful library for interacting with the discord API:
 ```bash
 npm install discord.js
 ```
+
+<br /> 
+
 ### step 4: create your bot file
 create a new folder named `src` and within that folder, create a new file named `bot.js`. This file will contain the main code for your bot.
+
+<br /> 
+
 ### step 5: set up environment variables
 create a new file named `.env` in the root directory of your project. this file will store sensitive information like your bot token. add your Discord bot token to the `.env` file:
 ```
 DISCORD_BOT_TOKEN=YOUR_BOT_TOKEN_HERE
 ```
 replace `YOUR_BOT_TOKEN_HERE` with your actual bot token obtained from the discord developer portal.
-<br /> <br />
+
+<br /> 
+
 ### step 6: creating your bot
 to obtain your discord bot token and to get your bot online, follow these steps:
 - visit [Discord Developer Portal](https://discord.com/developers/applications). login, if you haven't.
@@ -48,7 +64,7 @@ to obtain your discord bot token and to get your bot online, follow these steps:
 note: 
 - keep your bot token private and never share it with anyone. it's important for security.
 - double-check your bot token if you encounter "Invalid token provided" errors.
-<br /> <br />
+<br /> <br /> 
 ### step 7: run your bot
 now, you can run your bot using the following command:
 ```bash
