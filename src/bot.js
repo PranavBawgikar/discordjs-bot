@@ -4,5 +4,16 @@ const { Client, GatewayIntentBits } = require('discord.js') //Client is a class 
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] }) //Creating an instance of the Client class
 
-client.login('MTIxMjY1Njk5MDQxMzkyMjMzNA.GcUMrr.55j1obTn8dmAO7hcO25-0M3iGEndRmbZF8652U')
+client.on('ready', () => {
+    console.log(`${client.user.tag} just landed.`)
+})
+
+client.on('message', (message) => {
+    console.log(`[${message.author.tag}]: ${message.content}`)
+    if(message.content === 'Howdy') {
+        message.reply('What up homie')
+    }
+})
+
+client.login('')
 
